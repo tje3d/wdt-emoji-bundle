@@ -653,7 +653,7 @@
       var s = window.getSelection();
       if (!wdtEmojiBundle.ranges[this.dataset.rangeIndex]) {
         wdtEmojiBundle.ranges[this.dataset.rangeIndex] = new Range();
-      } else if (s.rangeCount > 0) {
+      } else {
         s.removeAllRanges();
         s.addRange(wdtEmojiBundle.ranges[this.dataset.rangeIndex]);
       }
